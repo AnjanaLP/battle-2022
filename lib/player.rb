@@ -1,5 +1,5 @@
 class Player
-  STARTING_HIT_POINTS = 50
+  STARTING_HIT_POINTS = 60
   DAMAGE_POINTS = 10
 
   attr_reader :name, :hit_points

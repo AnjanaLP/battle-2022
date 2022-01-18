@@ -1,5 +1,12 @@
-<h1><%= @game.player_1.name %> attacked <%= @game.player_2.name %></h1>
+<h1><%= @game.current_turn.name %> attacked <%= @game.current_opponent.name %></h1>
 
+<hr>
+
+<h3><%= @game.player_1.name %>: <%= @game.player_1.hit_points %> hit points</h3>
 <h3><%= @game.player_2.name %>: <%= @game.player_2.hit_points %> hit points</h3>
 
-<h3><%= @game.current_turn.name %>'s turn</h3>
+<hr>
+
+<form action="/switch-turn" method="post">
+  <input type="submit" value="OK">
+</form>
